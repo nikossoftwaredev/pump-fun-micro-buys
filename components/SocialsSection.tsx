@@ -7,11 +7,11 @@ import Card from "./Card";
 const SOCIALS_INFO = [
   {
     url: TELEGRAM_URL,
-    icon: <FaTelegramPlane size={40} />,
+    icon: <FaTelegramPlane size={25} />,
   },
   {
     url: TWITTER_URL,
-    icon: <FaTwitter size={40} />,
+    icon: <FaTwitter size={25} />,
   },
 ];
 
@@ -27,7 +27,7 @@ const SocialsSection = () => {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center btn btn-square btn-primary"
+              className="flex items-center justify-center btn btn-square btn-primary "
             >
               {icon}
             </a>
