@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Micro Pump Bot",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="forest">
-      <body>{children}</body>
+      <body className="bg-base-100 text-base-content text-lg">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
