@@ -4,6 +4,6 @@ export const headerLinks = [
   { path: `#socials`, text: "Socials" },
 ];
 
-export const TWITTER_URL = "https://x.com/jabbawif";
-export const TELEGRAM_URL = "https://t.me/jabbawifhutt";
+export const TWITTER_URL = "https://x.com/micropumpbot";
+export const TELEGRAM_URL = "https://t.me/micropumpbot";
 export const TELEGRAM_BOT_URL = "https://t.me/micropump_bot";
