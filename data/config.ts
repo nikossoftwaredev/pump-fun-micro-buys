@@ -1,6 +1,6 @@
 export const headerLinks = [
   { path: `#about`, text: "About" },
-  { path: `#how-it-works`, text: "How it Works" },
+  { path: `#usage`, text: "Usage" },
   { path: `#socials`, text: "Socials" },
 ];
 
