@@ -14,7 +14,7 @@ const HowItWorks = () => {
             </h3>
             <p className="mt-2">
               The <strong className="text-accent">MicroPump Bot</strong> boosts
-              your token's volume by automating purchases during critical{" "}
+              your token&apos;s volume by automating purchases during critical{" "}
               <strong className="text-accent">pump events</strong>. This helps
               your token gain visibility and potentially increase in value on
               platforms like <strong className="text-accent">pump.fun</strong>.
