@@ -10,10 +10,10 @@ Hello everyone! I'm excited to introduce the **MicroPump Bot**, a Telegram bot d
 - **Easy to Use**: Just paste the CA or the Pump Fun link, and watch your token’s visibility soar.
 
 ## 🖥️ Simple UI
-- ![Screenshot of MicroPump Bot](ui.png)
+ ![Screenshot of MicroPump Bot](ui.png)
 
 ## 📈 Transactions
-- ![Proof of Transactions](tx.png)
+ ![Proof of Transactions](tx.png)
 
 ## 🛠️ How to Use
 - Deposit funds into your micro wallet.
