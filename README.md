@@ -1,6 +1,3 @@
-# pump-fun-micro-buys
-Hello everyone! I developed the MicroPump Bot, a Telegram bot designed to boost your token's volume during pump events, helping it appear on the front page of Pump Fun. It's secure, user-friendly, and perfect for anyone looking to enhance their token's visibility. Try it out here: MicroPump Bot on Telegram.
-
 # MicroPump Bot for Telegram 🤖
 
 Hello everyone! I'm excited to introduce the **MicroPump Bot**, a Telegram bot crafted to enhance your token's visibility by boosting its volume during pump events on Pump Fun. It's designed to be secure, user-friendly, and highly effective. Check it out and give your token the spotlight it deserves! 🚀
