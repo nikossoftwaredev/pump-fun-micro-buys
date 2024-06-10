@@ -1,18 +1,22 @@
-# MicroPump Bot for Telegram 🤖
+# MicroPump Bot for Telegram 🚀
 
-Hello everyone! I'm excited to introduce the **MicroPump Bot**, a Telegram bot crafted to enhance your token's visibility by boosting its volume during pump events on Pump Fun. It's designed to be secure, user-friendly, and highly effective. Check it out and give your token the spotlight it deserves! 🚀
+Hello everyone! I'm excited to introduce the **MicroPump Bot**, a Telegram bot designed to boost your token's visibility by increasing its volume during pump events on [pump.fun](https://pump.fun/board). This bot is secure, user-friendly, and crafted to give your token the prominence it deserves. Give it a try today! 🌟
 
-## 🌐 Bot Link
-- **Try it out**: [MicroPump Bot on Telegram](https://t.me/micropump_bot)
+## 🔗 Bot Link
+- **Try it out here**: [MicroPump Bot on Telegram](https://t.me/micropump_bot)
 
-## 🎯 Core Features
-- **Customizable Fees**: Tailor the transaction fees to fit your strategy and budget.
-- **Easy to Use**: Simply paste the CA or the Pump Fun link, and start bumping your token's presence.
-- **Proof of Work**: Place your trust in visible results and straightforward processes.
+## ⚙️ Core Features
+- **Customizable Fees**: Adjust the transaction fees according to your strategy and financial preferences.
+- **Easy to Use**: Just paste the CA or the Pump Fun link, and watch your token’s visibility soar.
 
-## 📸 Screenshots
+## 🖥️ Simple UI
 - ![Screenshot of MicroPump Bot](placeholder_for_screenshot.png)
-- ![Proof of Work](placeholder_for_proof_of_work.png)
 
-Feel free to contribute to the project or suggest improvements. Let's pump up the fun together! 🎉
+## 📈 Transactions
+- ![Proof of Transactions](placeholder_for_proof_of_work.png)
+
+## 🛠️ How to Use
+- Deposit funds into your micro wallet.
+- Paste the CA or the pump.fun link.
+- Start bumping to increase your token's volume.
 
