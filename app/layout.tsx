@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="forest">
-      <body className="bg-base-100 text-base-content text-lg">
+      <body className="text-base-content text-lg font-custom">
         <Header />
         {children}
       </body>

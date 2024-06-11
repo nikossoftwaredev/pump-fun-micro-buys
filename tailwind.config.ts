@@ -11,6 +11,9 @@ const config: Config = {
         "solana-purple": "#9945FF",
         "solana-green": "#14F195",
       },
+      fontFamily: {
+        custom: ["custom-font", "sans-serif"], // Replace 'CustomFontName' with the actual font name
+      },
     },
   },
   plugins: [require("daisyui")],

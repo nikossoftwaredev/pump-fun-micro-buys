@@ -29,7 +29,7 @@ const Header = () => {
                 );
               })}
               <a href={TELEGRAM_BOT_URL} target="_blank">
-                <Button>Try it now</Button>
+                <Button>Launch App</Button>
               </a>
             </span>
           </ul>

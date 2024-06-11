@@ -1,3 +1,5 @@
+import { GRADIENT_STYLE } from "@/data/config";
+
 export const SectionTitle = ({
   title,
   className = "",
@@ -6,10 +8,10 @@ export const SectionTitle = ({
   className?: string;
 }) => {
   return (
-    <h2
-      className={`my-4 text-primary text-4xl font-extrabold text-center uppercase ${className}`}
-    >
-      {title}
-    </h2>
+    <div className="w-full flex justify-center">
+      <h2 className={`my-4 ${GRADIENT_STYLE} uppercase  ${className}`}>
+        {title}
+      </h2>
+    </div>
   );
 };
