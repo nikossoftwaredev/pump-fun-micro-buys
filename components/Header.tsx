@@ -7,8 +7,8 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <header className="w-full z-[999]  bg-base-200 fixed max-h-[100px]">
-      <nav className="w-full text-accent ">
+    <header className="w-full z-[999] fixed max-h-[100px] bg-transparent">
+      <nav className="w-full text-accent backdrop-blur-lg ">
         <span className="md:hidden">
           <MobileHeader />
         </span>

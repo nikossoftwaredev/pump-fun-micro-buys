@@ -4,9 +4,9 @@ import Card from "./Card";
 const AboutSection = () => {
   return (
     <section id="about">
-      <SectionTitle title="About" />
       <Card className="w-full">
         <div className="card-body flex flex-row flex-wrap items-center justify-center gap-8">
+          <SectionTitle title="About" />
           <div className="max-w-xl text-center">
             <h3 className="text-lg font-semibold">
               Welcome to <strong className="text-accent">MicroPump Bot</strong>!
@@ -36,7 +36,7 @@ const AboutSection = () => {
             <img
               src="/images/logo.webp"
               alt="Logo"
-              className="rounded-lg shadow-lg w-96 h-auto"
+              className="rounded-xl shadow-lg w-96 h-auto outline outline-primary"
             />
           </div>
         </div>
