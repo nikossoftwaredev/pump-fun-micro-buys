@@ -12,6 +12,9 @@ import { FaChartLine, FaCopy } from "react-icons/fa";
 import Toast from "@/components/Toast";
 import { useState } from "react";
 import Stat from "./Stat";
+import { CiMicrochip } from "react-icons/ci";
+import { GiPresent } from "react-icons/gi";
+import { TbMoneybag } from "react-icons/tb";
 
 const TokenSection = () => {
   const [showAlert, setShowAlert] = useState(false);
@@ -22,9 +25,30 @@ const TokenSection = () => {
         <SectionTitle title="Utility Token" />
         <div className="stats stats-vertical shadow outline outline-accent w-full">
           {[
-            { title: "Symbol", value: `✨ ${TOKEN_SYMBOL}` },
-            { title: "Total Supply", value: `💰 ${TOTAL_SUPPLY}` },
-            { title: "Utility", value: "🎁 0% fees" },
+            {
+              title: "Symbol",
+              value: (
+                <span className="flex items-center gap-2">
+                  <CiMicrochip /> {TOKEN_SYMBOL}
+                </span>
+              ),
+            },
+            {
+              title: "Total Supply",
+              value: (
+                <span className="flex items-center gap-2">
+                  <TbMoneybag /> {TOTAL_SUPPLY}
+                </span>
+              ),
+            },
+            {
+              title: "Utility",
+              value: (
+                <span className="flex items-center gap-2">
+                  <GiPresent /> 0% fees
+                </span>
+              ),
+            },
           ].map(({ title, value }) => (
             <Stat key={title} title={title} value={value} />
           ))}

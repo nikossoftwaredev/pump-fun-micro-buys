@@ -15,13 +15,6 @@ const AboutSection = () => {
               <strong className="text-accent">pump.fun</strong>.
             </p>
             <p>
-              Easily configure your{" "}
-              <strong className="text-accent">transaction fees</strong>, paste
-              the <strong className="text-accent">CA</strong> or the{" "}
-              <strong className="text-accent">pump.fun link</strong>, and start
-              increasing your token&apos;s volume with minimal effort.
-            </p>
-            <p>
               <strong className="text-accent">MicroPump Bot</strong> has
               it&apos;s own utility token &nbsp;
               <strong className="text-accent">$MICRO</strong> where token

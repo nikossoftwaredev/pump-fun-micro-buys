@@ -4,7 +4,7 @@ export const Stat = ({
   color,
 }: {
   title: string;
-  value: string;
+  value: JSX.Element;
   color?: string;
 }) => {
   return (
