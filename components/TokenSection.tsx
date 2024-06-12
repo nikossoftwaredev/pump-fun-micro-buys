@@ -4,9 +4,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import {
   BIRDEYE_URL,
   PUMP_URL,
-  RAYDIUM_URL,
   TOKEN_ADDRESS,
-  TOKEN_NAME,
   TOKEN_SYMBOL,
   TOTAL_SUPPLY,
 } from "@/data/config";
@@ -31,7 +29,6 @@ const TokenSection = () => {
             <Stat key={title} title={title} value={value} />
           ))}
         </div>
-
         <Card className="w-full">
           <span className="card-body p-2">
             <span className="grid grid-cols-2 items-center justify-center gap-4 font-extrabold text-2xl">
