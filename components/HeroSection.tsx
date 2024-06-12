@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="hero min-h-[200px] mt-[100px]">
+    <section id="hero" className="hero min-h-[200px] mt-[100px] w-full">
       <div className="text-center">
         <span className="bg-gradient-to-r from-solana-purple to-solana-green text-transparent text-4xl font-extrabold text-center bg-clip-text ">
           Bump Your Tokens to the Spotlight!

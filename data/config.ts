@@ -1,6 +1,7 @@
 export const headerLinks = [
   { path: `#about`, text: "About" },
   { path: `#usage`, text: "Usage" },
+  { path: `#token`, text: "Token" },
   { path: `#socials`, text: "Socials" },
 ];
 

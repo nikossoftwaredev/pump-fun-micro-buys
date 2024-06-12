@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="forest">
-      <body className="text-base-content text-lg font-custom">
+      <body className="text-base-content text-lg font-custom w-full flex justify-center">
         <Header />
         {children}
       </body>

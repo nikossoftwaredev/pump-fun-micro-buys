@@ -7,7 +7,7 @@ const AboutSection = () => {
       <Card className="w-full">
         <div className="card-body flex flex-row flex-wrap items-center justify-center gap-8">
           <SectionTitle title="About" />
-          <div className="max-w-xl space-y-4">
+          <div className="space-y-4">
             <p>
               <strong className="text-accent">MicroPump Bot</strong> is a
               specialized Telegram bot designed to enhance your token&apos;s

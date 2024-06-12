@@ -45,10 +45,7 @@ before:translate-y-5
 
 const StatsSection = () => {
   return (
-    <section
-      id="stats"
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-16"
-    >
+    <section id="stats" className="grid  grid-cols-1  gap-16 ">
       {[
         {
           title: "Service fees",
