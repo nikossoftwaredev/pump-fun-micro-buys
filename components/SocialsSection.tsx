@@ -6,7 +6,6 @@ import {
   PUMP_URL,
 } from "@/data/config";
 import { FaTelegramPlane, FaTwitter, FaInstagram } from "react-icons/fa";
-import { IconBase } from "react-icons";
 import { SectionTitle } from "./SectionTitle";
 import Card from "./Card";
 
