@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: APPLICATION_NAME,
     description: APPLICATION_DESCRIPTION,
-    images: "https://micropump.fun/images.logo.webp",
+    images: "https://micropump.fun/images/logo.webp",
   },
   twitter: {
     title: APPLICATION_NAME,
     description: APPLICATION_DESCRIPTION,
-    images: "https://micropump.fun/images.logo.webp",
+    images: "https://micropump.fun/images/logo.webp",
   },
 };
 
