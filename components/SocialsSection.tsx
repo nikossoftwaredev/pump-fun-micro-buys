@@ -12,23 +12,23 @@ import Card from "./Card";
 const SOCIALS_INFO = [
   {
     url: TELEGRAM_URL,
-    icon: <FaTelegramPlane size={25} className="text-[#0088cc]" />,
+    icon: <FaTelegramPlane size={25} className="text-[#1DA1F2]" />,
   },
   {
     url: TWITTER_URL,
     icon: <FaTwitter size={25} className="text-[#1DA1F2]" />,
   },
   {
-    url: DEX_URL,
-    icon: <img src="/images/screener.png" className="h-[40px]"></img>,
-  },
-  {
     url: DEX_TOOLS_URL,
-    icon: <img src="/images/tools.png" className="h-[40px]"></img>,
+    icon: <img src="/images/tools.png" className="h-[30px]"></img>,
   },
   {
     url: PUMP_URL,
-    icon: <img src="/images/pump.webp" className="h-[40px]"></img>,
+    icon: <img src="/images/pump.webp" className="h-[30px]"></img>,
+  },
+  {
+    url: DEX_URL,
+    icon: <img src="/images/screener.png" className="h-[35px]"></img>,
   },
 ];
 
@@ -44,7 +44,7 @@ const SocialsSection = () => {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center btn btn-square btn-primary "
+              className="flex items-center justify-center btn btn-square btn-accent"
             >
               {icon}
             </a>
