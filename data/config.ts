@@ -9,4 +9,4 @@ export const TELEGRAM_URL = "https://t.me/micropumpbot";
 export const TELEGRAM_BOT_URL = "https://t.me/micropump_bot";
 
 export const GRADIENT_STYLE =
-  "bg-gradient-to-r from-solana-purple to-solana-green text-transparent bg-clip-text text-4xl font-extrabold text-center";
+  "bg-gradient-to-r from-solana-purple to-solana-green text-transparent text-4xl font-extrabold text-center bg-clip-text";

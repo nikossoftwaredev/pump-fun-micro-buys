@@ -1,4 +1,5 @@
 import { GRADIENT_STYLE } from "@/data/config";
+import { twMerge } from "tailwind-merge";
 
 export const SectionTitle = ({
   title,
@@ -9,9 +10,9 @@ export const SectionTitle = ({
 }) => {
   return (
     <div className="w-full flex justify-center">
-      <h2 className={`my-4 ${GRADIENT_STYLE} uppercase  ${className}`}>
+      <span className="bg-gradient-to-r from-solana-purple to-solana-green text-transparent text-4xl font-extrabold text-center bg-clip-text uppercase my-4">
         {title}
-      </h2>
+      </span>
     </div>
   );
 };

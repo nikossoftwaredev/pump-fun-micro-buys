@@ -36,7 +36,6 @@ const HowItWorks = () => {
       <Card className="w-full">
         <div className="card-body flex flex-wrap md:flex-nowrap items-center justify-center gap-8">
           <SectionTitle title="Usage" />
-
           <ul className="steps steps-vertical">
             {steps.map((step) => (
               <li key={step.title} className="step step-primary">
