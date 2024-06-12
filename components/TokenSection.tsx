@@ -23,6 +23,12 @@ const TokenSection = () => {
       {showAlert && <Toast title="Token address copied" />}
       <section id="token" className="w-full space-y-6">
         <SectionTitle title="Utility Token" />
+        <p className="text-2xl mt-4">
+          Token holders will pay{" "}
+          <strong className="text-accent">0% fees</strong> while using the bot.
+          &nbsp;Transfer the tokens to the micropump bot wallet and start using
+          the service for free.
+        </p>
         <div className="stats stats-vertical shadow outline outline-accent w-full">
           {[
             {
