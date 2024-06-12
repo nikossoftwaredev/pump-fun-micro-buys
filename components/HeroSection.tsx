@@ -9,9 +9,9 @@ const HeroSection = () => {
           Bump Your Tokens to the Spotlight!
         </span>
         <p className="text-2xl mt-4">
-          Make your tokens trend on the pump.fun front page.
-          <br />
-          Using the lowest fees on the market .
+          Make your tokens trend on the{" "}
+          <strong className="text-accent">pump.fun</strong>&nbsp; Using the
+          lowest fees on the market .
         </p>
       </div>
     </section>

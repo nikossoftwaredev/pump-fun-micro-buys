@@ -10,3 +10,20 @@
   font-style: normal;
   font-display: swap;
 }
+
+.shadow-gradient {
+  position: relative;
+}
+
+.shadow-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+  background: linear-gradient(to right, red, blue);
+  border-radius: inherit;
+}
