@@ -1,19 +1,24 @@
-import { title } from "process";
+"use client";
+import axios from "axios";
+import { useEffect, useMemo, useState } from "react";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { BiTransfer } from "react-icons/bi";
 import { GiPresent } from "react-icons/gi";
+import { FaUser } from "react-icons/fa";
+
+interface GradientCardProps {
+  title: string;
+  icon: JSX.Element;
+  description?: string;
+  value: string;
+}
 
 const GradientCard = ({
   title,
   icon,
   description,
   value,
-}: {
-  title: string;
-  description?: string;
-  icon: JSX.Element;
-  value: string;
-}) => (
+}: GradientCardProps) => (
   <div
     className="
 card
@@ -44,28 +49,53 @@ before:translate-y-5
 );
 
 const StatsSection = () => {
+  const [users, setUsers] = useState<number>(0);
+
+  useEffect(() => {
+    const dataCall = async () => {
+      try {
+        const { data } = await axios.get(`http://34.125.202.121:8080/users`);
+        setUsers(data.totalUsers);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+
+    dataCall();
+  }, []);
+
+  const stats = useMemo(() => {
+    return [
+      {
+        title: "Users",
+        icon: <FaUser size={40} />,
+        value: `${users}`,
+        description: "Total number of users",
+      },
+      {
+        title: "Service fees",
+        icon: <AiFillDollarCircle size={40} />,
+        value: "0.001 SOL",
+        description: "Lowest fees on the market",
+      },
+      {
+        title: "Transaction fees",
+        icon: <BiTransfer size={40} />,
+        value: "0.0005 SOL",
+        description: "Fully configurable",
+      },
+      {
+        title: "Fees Discount",
+        icon: <GiPresent size={40} />,
+        value: "100%",
+        description: "Token holders don't pay any fees",
+      },
+    ];
+  }, [users]);
+
   return (
     <section id="stats" className="grid  grid-cols-1  gap-16 ">
-      {[
-        {
-          title: "Service fees",
-          icon: <AiFillDollarCircle size={40} />,
-          value: "0.001 SOL",
-          description: "Lowest fees on the market",
-        },
-        {
-          title: "Transaction fees",
-          icon: <BiTransfer size={40} />,
-          value: "0.0005 SOL",
-          description: "Fully configurable",
-        },
-        {
-          title: "Fees Discount",
-          icon: <GiPresent size={40} />,
-          value: "100%",
-          description: "Token holders don't pay any fees",
-        },
-      ].map((props, i) => (
+      {stats.map((props, i) => (
         <GradientCard key={i} {...props} />
       ))}
     </section>
