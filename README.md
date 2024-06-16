@@ -19,7 +19,7 @@ Hello everyone! I'm excited to introduce the **MicroPump Bot**, a Telegram bot d
 
 ## 📈 Transactions
 
-![Proof of Transactions](public/images/tx.png)
+![Proof of Transactions](public/images/promo.gif)
 
 ## 🛠️ How to Use
 

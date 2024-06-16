@@ -58,7 +58,7 @@ const HowItWorks = () => {
           </ul>
           <div>
             <img
-              src="/images/tx.png"
+              src="/images/promo.gif"
               alt="Tx"
               className="rounded-lg shadow-lg w-full h-auto mb-4"
             />
