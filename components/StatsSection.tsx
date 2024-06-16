@@ -5,12 +5,14 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { BiTransfer } from "react-icons/bi";
 import { GiPresent } from "react-icons/gi";
 import { FaUser } from "react-icons/fa";
+import Loader from "./Loader";
 
 interface GradientCardProps {
   title: string;
   icon: JSX.Element;
   description?: string;
   value: string;
+  loading?: boolean;
 }
 
 const GradientCard = ({
@@ -18,6 +20,7 @@ const GradientCard = ({
   icon,
   description,
   value,
+  loading,
 }: GradientCardProps) => (
   <div
     className="
@@ -42,23 +45,34 @@ before:translate-y-5
     <div className="z-10 stat text-base-content">
       <div className="stat-figure text-accent ">{icon}</div>
       <div className="stat-title text-base-content">{title}</div>
-      <div className="stat-value">{value}</div>
+      <div className="stat-value">
+        {value} {loading && <Loader />}
+      </div>
       <div className="stat-desc text-base-content">{description}</div>
     </div>
   </div>
 );
 
 const StatsSection = () => {
-  const [users, setUsers] = useState<number>(0);
+  const [users, setUsers] = useState<string>("--");
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     const dataCall = async () => {
       try {
-        const { data } = await axios.get(`http://34.125.202.121:8080/users`);
-        setUsers(data.totalUsers);
+        setLoading(true);
+        const { data } = await axios.get(
+          `https://api.allorigins.win/get?url=${encodeURIComponent(
+            "http://34.125.202.121:8080/users"
+          )}`
+        );
+
+        const { totalUsers } = JSON.parse(data.contents);
+        setUsers(totalUsers);
       } catch (e) {
         console.log(e);
       }
+      setLoading(false);
     };
 
     dataCall();
@@ -69,8 +83,9 @@ const StatsSection = () => {
       {
         title: "Users",
         icon: <FaUser size={40} />,
-        value: `${users}`,
+        value: users,
         description: "Total number of users",
+        loading,
       },
       {
         title: "Service fees",
@@ -91,7 +106,7 @@ const StatsSection = () => {
         description: "Token holders don't pay any fees",
       },
     ];
-  }, [users]);
+  }, [users, loading]);
 
   return (
     <section id="stats" className="grid  grid-cols-1  gap-16 ">
