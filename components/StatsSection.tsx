@@ -63,7 +63,7 @@ const StatsSection = () => {
         setLoading(true);
         const { data } = await axios.get(
           `https://api.allorigins.win/get?url=${encodeURIComponent(
-            "http://34.125.202.121:8080/users"
+            "http://35.226.83.55:8080/users"
           )}`
         );
 
@@ -96,8 +96,8 @@ const StatsSection = () => {
       {
         title: "Transaction fees",
         icon: <BiTransfer size={40} />,
-        value: "0.0005 SOL",
-        description: "Fully configurable",
+        value: "Optimal",
+        description: "Auto calculated to ensure stability",
       },
       {
         title: "Fees Discount",
