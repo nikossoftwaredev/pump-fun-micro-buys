@@ -37,14 +37,14 @@ const SocialsSection = () => {
     <section id="socials">
       <SectionTitle title="Socials" />
       <Card className="w-full">
-        <div className="card-body flex flex-row flex-wrap items-center justify-center gap-8">
+        <div className="card-body flex flex-row flex-wrap items-center justify-center gap-2">
           {SOCIALS_INFO.map(({ url, icon }) => (
             <a
               key={url}
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center btn btn-square btn-accent"
+              className="flex items-center justify-center btn btn-square bg-black"
             >
               {icon}
             </a>

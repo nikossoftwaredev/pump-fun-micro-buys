@@ -28,7 +28,12 @@ const Header = () => {
                   </li>
                 );
               })}
-              <a href={TELEGRAM_BOT_URL} target="_blank">
+
+              <a
+                href={TELEGRAM_BOT_URL}
+                target="_blank"
+                className="animate-pulse-scale"
+              >
                 <Button>Launch App</Button>
               </a>
             </span>

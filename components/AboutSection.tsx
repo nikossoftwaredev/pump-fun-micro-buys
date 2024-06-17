@@ -18,7 +18,7 @@ const AboutSection = () => {
               <strong className="text-accent">MicroPump Bot</strong> has
               it&apos;s own utility token &nbsp;
               <strong className="text-accent">$MICRO</strong> where token
-              holders get a discount.
+              holders get a fee discount.
             </p>
             <p>
               <strong className="text-accent">MicroPump Bot</strong> is using

@@ -13,6 +13,9 @@ const HeroSection = () => {
           <strong className="text-accent">pump.fun</strong>&nbsp; Using the
           lowest fees on the market .
         </p>
+        <div className="flex justify-center mt-4">
+          <img src="images/pump.webp" />
+        </div>
       </div>
     </section>
   );

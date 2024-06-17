@@ -11,7 +11,7 @@ const steps = [
   {
     title: "Add funds",
     description:
-      "Deposit sufficient funds to cover transaction fees and bump costs. Even 0.1 sol is enough for many txns.",
+      "Deposit sufficient funds to cover transaction fees and bump costs, 0.1 sol is enough for 100 txns.",
   },
 
   {
@@ -26,7 +26,7 @@ const steps = [
   {
     title: "Click Start bumping",
     description:
-      "The bot will automatically start making 0.02 buy/sells to the",
+      "The bot will automatically start making 0.02 buy/sells making it appear on the front page.",
   },
 ];
 
@@ -56,13 +56,11 @@ const HowItWorks = () => {
               </li>
             ))}
           </ul>
-          <div>
-            <img
-              src="/images/promo.gif"
-              alt="Tx"
-              className="rounded-lg shadow-lg w-full h-auto mb-4"
-            />
-          </div>
+          <img
+            src="/images/promo.gif"
+            alt="Tx"
+            className="rounded-lg shadow-lg w-full h-auto outline outline-primary"
+          />
         </div>
       </Card>
     </section>

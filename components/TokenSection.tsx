@@ -86,7 +86,7 @@ const TokenSection = () => {
                 rel="noreferrer"
                 className="btn btn-primary"
               >
-                CHARTS <FaChartLine size={20} />
+                Charts <FaChartLine size={20} />
               </a>
             </span>
           </span>
