@@ -29,7 +29,7 @@ const MobileHeader = () => {
           target="_blank"
           className="animate-pulse-scale"
         >
-          <Button>Launch App</Button>
+          <Button>Try the Bot</Button>
         </a>
         <button className="btn btn-square btn-outline btn-secondary h-[40] flex justify-center mr-1">
           {openModal ? (
