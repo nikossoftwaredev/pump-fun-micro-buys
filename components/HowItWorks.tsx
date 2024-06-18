@@ -56,12 +56,12 @@ const HowItWorks = () => {
               </li>
             ))}
           </ul>
-          <img
-            src="/images/promo.gif"
-            alt="Tx"
-            className="rounded-lg shadow-lg w-full h-auto outline outline-primary"
-          />
         </div>
+        <img
+          src="/images/promo.gif"
+          alt="Tx"
+          className="rounded-lg shadow-lg w-full h-auto "
+        />
       </Card>
     </section>
   );
