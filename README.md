@@ -1,8 +1,9 @@
-# MicroPump Bot for Telegram 🚀 [Website](https://micro-pump-bot.netlify.app)
+# MicroPump Bot for Telegram 🚀 [Website](https://micropump.fun/)
 
 ![Logo](public/images/logo.webp)
 
-Hello everyone! I'm excited to introduce the **MicroPump Bot**, a Telegram bot designed to boost your token's visibility by increasing its volume during pump events on [pump.fun](https://pump.fun/board). This bot is secure, user-friendly, and crafted to give your token the prominence it deserves. Give it a try today! 🌟
+Hello everyone! I'm excited to introduce the **MicroPump Bot**, a Telegram bot designed to boost your token's visibility by increasing its volume on [pump.fun](https://pump.fun/board).Make your tokens trend on pump.fun.
+Enjoy the cheapest and most efficient micro pump bot. 
 
 ## 🔗 Bot Link
 
