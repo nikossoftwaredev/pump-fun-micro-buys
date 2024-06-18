@@ -34,7 +34,7 @@ const Header = () => {
                 target="_blank"
                 className="animate-pulse-scale"
               >
-                <Button>Launch App</Button>
+                <Button>Launch the Bot</Button>
               </a>
             </span>
           </ul>
