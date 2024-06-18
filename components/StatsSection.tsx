@@ -38,8 +38,8 @@ before:bg-gradient-to-br
 before:from-solana-purple
 before:to-solana-green
 before:blur-md
-before:translate-x-3
-before:translate-y-5
+before:translate-x-1
+before:translate-y-2
 "
   >
     <div className="z-10 stat text-base-content">
@@ -97,7 +97,7 @@ const StatsSection = () => {
         title: "Transaction fees",
         icon: <BiTransfer size={40} />,
         value: "Optimal",
-        description: "Auto calculated to ensure stability",
+        description: "Chose between Custom, Turbo and Optimal",
       },
       {
         title: "Fees Discount",
