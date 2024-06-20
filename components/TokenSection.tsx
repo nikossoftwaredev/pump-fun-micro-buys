@@ -116,11 +116,11 @@ const TokenSection = () => {
             <ul>
               <li>
                 <span className="font-bold text-gold">Tier 1</span>{" "}
-                <i>(5M Tokens)</i>
+                <i>(10M Tokens)</i>
               </li>
               <li>
                 <span className="font-bold text-silver">Tier 2</span>{" "}
-                <i>(2M Tokens)</i>
+                <i>(4M Tokens)</i>
               </li>
               <li>
                 <span className="font-bold text-bronze">Tier 3</span>{" "}
