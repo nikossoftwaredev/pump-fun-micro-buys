@@ -10,6 +10,9 @@ const config: Config = {
       colors: {
         "solana-purple": "#9945FF",
         "solana-green": "#14F195",
+        gold: "#FFD700",
+        silver: "#C0C0C0",
+        bronze: "#B87333",
       },
       fontFamily: {
         custom: ["custom-font", "sans-serif"], // Replace 'CustomFontName' with the actual font name

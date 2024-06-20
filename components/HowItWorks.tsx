@@ -6,6 +6,7 @@ const steps = [
   {
     title: "Launch the bot",
     link: TELEGRAM_BOT_URL,
+    description: "Click on Try the Bot above. Or use this link ",
   },
 
   {
@@ -16,17 +17,17 @@ const steps = [
 
   {
     title: "Paste link",
-    description: "Paste the CA or the pump.fun link.",
+    description: "Paste the pump.fun link or the contract address (CA).",
   },
   {
     title: "Configure settings",
     description:
-      "Set up the number of buys and sells to make and the priority fee",
+      "Set up the number of buys/sells, amount to buy/sell and priority fee",
   },
   {
     title: "Click Start bumping",
     description:
-      "The bot will automatically start making 0.02 buy/sells making it appear on the front page.",
+      "The bot will automatically start making small buys/sells making it trend on the bump page.",
   },
 ];
 
@@ -42,16 +43,16 @@ const HowItWorks = () => {
                 <span>
                   <strong className="text-accent">{step.title}:</strong>
                   &nbsp;
+                  {step.description}
                   {step.link && (
                     <a
                       href={step.link}
                       target="_blank"
                       className="text-primary font-bold"
                     >
-                      @MicroPumpBot
+                      @micropump_bot
                     </a>
                   )}
-                  {step.description}
                 </span>
               </li>
             ))}

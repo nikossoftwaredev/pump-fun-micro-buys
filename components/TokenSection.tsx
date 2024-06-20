@@ -4,6 +4,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import {
   BIRDEYE_URL,
   PUMP_URL,
+  TELEGRAM_BOT_URL,
   TOKEN_ADDRESS,
   TOKEN_SYMBOL,
   TOTAL_SUPPLY,
@@ -15,6 +16,7 @@ import Stat from "./Stat";
 import { CiMicrochip } from "react-icons/ci";
 import { GiPresent } from "react-icons/gi";
 import { TbMoneybag } from "react-icons/tb";
+import { FaTrophy } from "react-icons/fa";
 
 const TokenSection = () => {
   const [showAlert, setShowAlert] = useState(false);
@@ -23,12 +25,7 @@ const TokenSection = () => {
       {showAlert && <Toast title="Token address copied" />}
       <section id="token" className="w-full space-y-6">
         <SectionTitle title="Utility Token" />
-        <p className="text-2xl mt-4">
-          Token holders will pay{" "}
-          <strong className="text-accent">0% fees</strong> while using the bot.
-          &nbsp;Transfer the tokens to the micropump bot wallet and start using
-          the service for free.
-        </p>
+
         <div className="stats stats-vertical shadow outline outline-accent w-full">
           {[
             {
@@ -48,10 +45,26 @@ const TokenSection = () => {
               ),
             },
             {
-              title: "Utility",
+              title: "Tier 1 Holder Discount",
               value: (
                 <span className="flex items-center gap-2">
-                  <GiPresent /> 0% fees
+                  <FaTrophy className="text-gold" /> 90% Off
+                </span>
+              ),
+            },
+            {
+              title: "Tier 2 Holder Discount",
+              value: (
+                <span className="flex items-center gap-2">
+                  <FaTrophy className="text-silver" /> 40% Off
+                </span>
+              ),
+            },
+            {
+              title: "Tier 3 Holder Discount",
+              value: (
+                <span className="flex items-center gap-2">
+                  <FaTrophy className="text-bronze" /> 10% Off
                 </span>
               ),
             },
@@ -91,6 +104,39 @@ const TokenSection = () => {
             </span>
           </span>
         </Card>
+        <p className="text-2xl mt-4">
+          Token holders will have a{" "}
+          <strong className="text-accent">discount</strong> to service fees
+          based on the amount of{" "}
+          <strong className="text-accent">{TOKEN_SYMBOL}</strong> that they
+          hold. &nbsp;
+          <br />
+          <br />
+          <ul>
+            <li>
+              <span className="font-bold text-gold">Tier 1</span>{" "}
+              <i>(5M Tokens)</i>
+            </li>
+            <li>
+              <span className="font-bold text-silver">Tier 2</span>{" "}
+              <i>(2M Tokens)</i>
+            </li>
+            <li>
+              <span className="font-bold text-bronze">Tier 3</span>{" "}
+              <i>(1M Tokens)</i>
+            </li>
+          </ul>
+          <br />
+          Transfer the tokens to your{" "}
+          <a
+            href={TELEGRAM_BOT_URL}
+            target="_blank"
+            className="text-accent font-bold"
+          >
+            @micropump_bot{" "}
+          </a>
+          wallet and get your discount automatically.
+        </p>
       </section>
     </>
   );
