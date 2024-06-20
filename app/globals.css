@@ -11,6 +11,10 @@
   font-display: swap;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .shadow-gradient {
   position: relative;
 }
