@@ -14,9 +14,9 @@ import Toast from "@/components/Toast";
 import { useState } from "react";
 import Stat from "./Stat";
 import { CiMicrochip } from "react-icons/ci";
-import { GiPresent } from "react-icons/gi";
 import { TbMoneybag } from "react-icons/tb";
 import { FaTrophy } from "react-icons/fa";
+import JupiterTerminal from "./JupiterTerminal";
 
 const TokenSection = () => {
   const [showAlert, setShowAlert] = useState(false);
@@ -139,6 +139,7 @@ const TokenSection = () => {
             wallet and get your discount automatically.
           </span>
         </Card>
+        <JupiterTerminal />
       </section>
     </>
   );

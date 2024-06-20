@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -31,6 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="forest">
+      <head>
+        <script data-preload src="https://terminal.jup.ag/main-v1.js"></script>
+      </head>
       <body className="text-base-content text-lg font-custom w-full flex justify-center">
         <Header />
         {children}
