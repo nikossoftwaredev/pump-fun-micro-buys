@@ -16,7 +16,7 @@ export const TOKEN_SYMBOL = "$MICRO";
 export const TOKEN_NAME = "MicroPump";
 export const TOTAL_SUPPLY = "1B";
 
-export const TOKEN_ADDRESS = "Ca: soon";
+export const TOKEN_ADDRESS = "5NYW4Ut8fYGbqygi1pgQDHVLkM3Jsev5dTLCDTJ4pump";
 export const RAYDIUM_URL = `https://raydium.io/swap/?inputCurrency=sol&outputCurrency=${TOKEN_ADDRESS}&fixed=in`;
 export const BIRDEYE_URL = `https://birdeye.so/token/${TOKEN_ADDRESS}?chain=solana`;
 export const DEX_URL = `https://dexscreener.com/solana/${TOKEN_ADDRESS}`;
