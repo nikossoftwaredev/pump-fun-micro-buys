@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
+import ReferralsSection from "@/components/ReferralsSection";
 import SocialsSection from "@/components/SocialsSection";
 import StatsSection from "@/components/StatsSection";
 import TokenSection from "@/components/TokenSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <HowItWorks />
       <StatsSection />
       <TokenSection />
+      <ReferralsSection />
       <SocialsSection />
     </main>
   );

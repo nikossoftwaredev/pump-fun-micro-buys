@@ -104,39 +104,41 @@ const TokenSection = () => {
             </span>
           </span>
         </Card>
-        <p className="text-2xl mt-4">
-          Token holders will have a{" "}
-          <strong className="text-accent">discount</strong> to service fees
-          based on the amount of{" "}
-          <strong className="text-accent">{TOKEN_SYMBOL}</strong> that they
-          hold. &nbsp;
-          <br />
-          <br />
-          <ul>
-            <li>
-              <span className="font-bold text-gold">Tier 1</span>{" "}
-              <i>(5M Tokens)</i>
-            </li>
-            <li>
-              <span className="font-bold text-silver">Tier 2</span>{" "}
-              <i>(2M Tokens)</i>
-            </li>
-            <li>
-              <span className="font-bold text-bronze">Tier 3</span>{" "}
-              <i>(1M Tokens)</i>
-            </li>
-          </ul>
-          <br />
-          Transfer the tokens to your{" "}
-          <a
-            href={TELEGRAM_BOT_URL}
-            target="_blank"
-            className="text-accent font-bold"
-          >
-            @micropump_bot{" "}
-          </a>
-          wallet and get your discount automatically.
-        </p>
+        <Card>
+          <span className="text-2xl mt-4 p-4">
+            Token holders will have a{" "}
+            <strong className="text-accent">discount</strong> to service fees
+            based on the amount of{" "}
+            <strong className="text-accent">{TOKEN_SYMBOL}</strong> that they
+            hold. &nbsp;
+            <br />
+            <br />
+            <ul>
+              <li>
+                <span className="font-bold text-gold">Tier 1</span>{" "}
+                <i>(5M Tokens)</i>
+              </li>
+              <li>
+                <span className="font-bold text-silver">Tier 2</span>{" "}
+                <i>(2M Tokens)</i>
+              </li>
+              <li>
+                <span className="font-bold text-bronze">Tier 3</span>{" "}
+                <i>(1M Tokens)</i>
+              </li>
+            </ul>
+            <br />
+            Transfer the tokens to your{" "}
+            <a
+              href={TELEGRAM_BOT_URL}
+              target="_blank"
+              className="text-accent font-bold"
+            >
+              @micropump_bot{" "}
+            </a>
+            wallet and get your discount automatically.
+          </span>
+        </Card>
       </section>
     </>
   );
