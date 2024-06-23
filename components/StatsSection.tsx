@@ -6,6 +6,7 @@ import { BiTransfer } from "react-icons/bi";
 import { GiPresent } from "react-icons/gi";
 import { FaUser } from "react-icons/fa";
 import Loader from "./Loader";
+import { FaTicket } from "react-icons/fa6";
 
 interface GradientCardProps {
   title: string;
@@ -90,8 +91,14 @@ const StatsSection = () => {
       {
         title: "Service fees",
         icon: <AiFillDollarCircle size={40} />,
-        value: "0.001 SOL",
-        description: "Lowest fees on the market",
+        value: "0.0005 SOL",
+        description: "0.001 SOL if you don't hold $MICRO",
+      },
+      {
+        title: "Token Pass",
+        icon: <FaTicket size={40} />,
+        value: "0.2 SOL",
+        description: "Paid once, no extra fees",
       },
       {
         title: "Transaction fees",
