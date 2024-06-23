@@ -48,7 +48,7 @@ const TokenSection = () => {
               title: "Tier 1 Holder Discount",
               value: (
                 <span className="flex items-center gap-2">
-                  <FaTrophy className="text-gold" /> 90% Off
+                  <FaTrophy className="text-gold" /> 50% Off
                 </span>
               ),
             },
@@ -56,7 +56,7 @@ const TokenSection = () => {
               title: "Tier 2 Holder Discount",
               value: (
                 <span className="flex items-center gap-2">
-                  <FaTrophy className="text-silver" /> 40% Off
+                  <FaTrophy className="text-silver" /> 25% Off
                 </span>
               ),
             },
