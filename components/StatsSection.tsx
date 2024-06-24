@@ -95,7 +95,7 @@ const StatsSection = () => {
         description: "0.001 SOL if you don't hold $MICRO",
       },
       {
-        title: "Token Pass",
+        title: "Or Use Token Pass",
         icon: <FaTicket size={40} />,
         value: "0.2 SOL",
         description: "Paid once, no extra fees",
