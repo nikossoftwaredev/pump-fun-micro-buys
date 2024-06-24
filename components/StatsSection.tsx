@@ -91,8 +91,8 @@ const StatsSection = () => {
       {
         title: "Service fees",
         icon: <AiFillDollarCircle size={40} />,
-        value: "0.0005 SOL",
-        description: "0.001 SOL if you don't hold $MICRO",
+        value: "0.00025 SOL",
+        description: "0.0005 SOL if you don't hold $MICRO",
       },
       {
         title: "Or Use Token Pass",
