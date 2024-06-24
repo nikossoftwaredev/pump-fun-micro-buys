@@ -109,8 +109,8 @@ const StatsSection = () => {
       {
         title: "Fees Discount",
         icon: <GiPresent size={40} />,
-        value: "100%",
-        description: "Token holders don't pay any fees",
+        value: "10% - 50%",
+        description: "Token holders get a discount",
       },
     ];
   }, [users, loading]);
