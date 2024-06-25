@@ -6,6 +6,8 @@ import SocialsSection from "@/components/SocialsSection";
 import StatsSection from "@/components/StatsSection";
 import TokenSection from "@/components/TokenSection";
 
+export const revalidate = 0;
+
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen items-center justify-center p-2 bg-base-100 gap-16 max-w-xl">

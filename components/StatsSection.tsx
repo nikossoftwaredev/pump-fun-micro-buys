@@ -7,7 +7,6 @@ import { FaTicket } from "react-icons/fa6";
 import { SERVER_URL } from "@/data/config";
 import GradientCard from "./GradientCard";
 
-export const revalidate = 60
 
 
 const StatsSection = async () => {
