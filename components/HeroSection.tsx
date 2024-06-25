@@ -6,7 +6,7 @@ const HeroSection = () => {
           Bump Your Tokens to the Spotlight!
         </span>
         <div className="text-2xl">
-          Make your tokens trend on
+          Make your tokens trend on{" "}
           <strong className="text-accent">
             <a href="https://pump.fun" target="_blank">
               pump.fun
