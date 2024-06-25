@@ -8,18 +8,23 @@ const HeroSection = () => {
         <span className="bg-gradient-to-r from-solana-purple to-solana-green text-transparent text-4xl font-extrabold text-center bg-clip-text ">
           Bump Your Tokens to the Spotlight!
         </span>
-        <p className="text-2xl">
+        <span className="text-2xl">
           Make your tokens trend on
           <strong className="text-accent">
-            <a href="https://pump.fun"> pump.fun</a>.
+            <a href="https://pump.fun" target="_blank">
+              pump.fun
+            </a>
+            .
           </strong>
           <p className="text-xl">
             Enjoy the <strong className="text-accent">cheapest</strong> and most{" "}
             <strong className="text-accent">efficient</strong> micro pump bot.
           </p>
-        </p>
+        </span>
         <div className="flex justify-center">
-          <img src="images/pump.webp" />
+          <a href="https://pump.fun" target="_blank">
+            <img src="images/pump.webp" />
+          </a>
         </div>
       </div>
     </section>

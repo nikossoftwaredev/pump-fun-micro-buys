@@ -41,8 +41,14 @@ before:to-solana-green
 before:blur-md
 before:translate-x-1
 before:translate-y-2
+relative
 "
   >
+    {title.includes("Pass") && (
+      <div className="badge  p-3 bg-error text-white absolute -top-3 -left-4">
+        New
+      </div>
+    )}
     <div className="z-10 stat text-base-content">
       <div className="stat-figure text-accent ">{icon}</div>
       <div className="stat-title text-base-content">{title}</div>
@@ -56,6 +62,7 @@ before:translate-y-2
 
 const StatsSection = () => {
   const [users, setUsers] = useState<string>("--");
+  const [tokenPasses, setTokenPasses] = useState<string>("--");
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
@@ -64,12 +71,20 @@ const StatsSection = () => {
         setLoading(true);
         const { data } = await axios.get(
           `https://api.allorigins.win/get?url=${encodeURIComponent(
-            "http://35.226.83.55:8080/users"
+            "http://34.171.163.77:8080/users"
+          )}`
+        );
+
+        const { data: tokenPassData } = await axios.get(
+          `https://api.allorigins.win/get?url=${encodeURIComponent(
+            "http://34.171.163.77:8080/token-passes"
           )}`
         );
 
         const { totalUsers } = JSON.parse(data.contents);
+        const { tokenPassesCount } = JSON.parse(tokenPassData.contents);
         setUsers(totalUsers);
+        setTokenPasses(tokenPassesCount);
       } catch (e) {
         console.log(e);
       }
@@ -98,7 +113,7 @@ const StatsSection = () => {
         title: "Or Use Token Pass",
         icon: <FaTicket size={40} />,
         value: "0.2 SOL",
-        description: "Paid once, no extra fees",
+        description: `Paid once, no extra fees. Bought ${tokenPasses} times`,
       },
       {
         title: "Transaction fees",
@@ -113,7 +128,7 @@ const StatsSection = () => {
         description: "Token holders get a discount",
       },
     ];
-  }, [users, loading]);
+  }, [users, loading, tokenPasses]);
 
   return (
     <section id="stats" className="grid  grid-cols-1  gap-16 ">
