@@ -1,6 +1,6 @@
 import Card from "@/components/Card";
 import { SectionTitle } from "@/components/SectionTitle";
-import { TOKEN_SYMBOL } from "@/data/config";
+import { SERVER_URL, TOKEN_SYMBOL } from "@/data/config";
 import axios from "axios";
 import UserRow from "./UserRow";
 
@@ -8,7 +8,7 @@ export const revalidate = 60
 
 const ReferralsSection = async () => {
   const { data } = await axios.get(
-    `http://34.171.163.77:8080/referrals`
+    `${SERVER_URL}/referrals`
   );
 
   return (

@@ -22,3 +22,5 @@ export const BIRDEYE_URL = `https://birdeye.so/token/${TOKEN_ADDRESS}?chain=sola
 export const DEX_URL = `https://dexscreener.com/solana/${TOKEN_ADDRESS}`;
 export const DEX_TOOLS_URL = `https://www.dextools.io/app/en/solana/pair-explorer/${TOKEN_ADDRESS}?t=1711125507735`;
 export const PUMP_URL = `https://www.pump.fun/${TOKEN_ADDRESS}`;
+
+export const SERVER_URL = "http://34.171.163.77:8080";

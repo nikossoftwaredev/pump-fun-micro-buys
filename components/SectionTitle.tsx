@@ -1,5 +1,3 @@
-import { GRADIENT_STYLE } from "@/data/config";
-import { twMerge } from "tailwind-merge";
 
 export const SectionTitle = ({
   title,
