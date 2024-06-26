@@ -6,20 +6,20 @@ const HeroSection = () => {
           Bump Your Tokens to the Spotlight!
         </span>
         <div className="text-2xl">
-          Make your tokens trend on{" "}
-          <strong className="text-accent">
-            <a href="https://pump.fun" target="_blank">
-              pump.fun
-            </a>
-          </strong>
+          Make your tokens trend 🔥
           <p className="text-xl">
             Enjoy the <strong className="text-accent">cheapest</strong> and most{" "}
             <strong className="text-accent">efficient</strong> micro pump bot.
           </p>
         </div>
-        <div className="flex justify-center">
+        <p>Bump now on 2 supported platforms</p>
+        <div className="flex gap-4 justify-center">
           <a href="https://pump.fun" target="_blank">
             <img src="images/pump.webp" />
+          </a>
+          OR
+          <a href="https://dexscreener.com/moonshot" target="_blank">
+            <img src="images/moonshot.png" />
           </a>
         </div>
       </div>
