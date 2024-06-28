@@ -12,7 +12,7 @@ const steps = [
   {
     title: "Add funds",
     description:
-      "Deposit sufficient funds to cover transaction fees and bump costs, 0.1 sol is enough for 100 txns.",
+      "Deposit sufficient funds to cover transaction fees and bump costs, 0.1 sol is enough for 250 txns.",
   },
 
   {

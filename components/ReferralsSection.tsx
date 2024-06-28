@@ -4,12 +4,10 @@ import { SERVER_URL, TOKEN_SYMBOL } from "@/data/config";
 import axios from "axios";
 import UserRow from "./UserRow";
 
-export const revalidate = 60
+export const revalidate = 60;
 
 const ReferralsSection = async () => {
-  const { data } = await axios.get(
-    `${SERVER_URL}/referrals`
-  );
+  const { data } = await axios.get(`${SERVER_URL}/referrals`);
 
   return (
     <>
@@ -21,10 +19,8 @@ const ReferralsSection = async () => {
               Use your referral link that you see on the{" "}
               <a className="text-accent">@micropump_bot</a> to earn referral
               points.
-              <br /> For each user referred who deposits 0.1 SOL, you will be
-              airdropped{" "}
-              <strong className="text-accent">100k {TOKEN_SYMBOL}</strong>{" "}
-              tokens.
+              <br /> For each user referred who buys <b>3</b> tokens passes, you
+              will earn one free token pass.
             </p>
           </span>
           <SectionTitle title="LEADERBOARD" />
@@ -39,15 +35,20 @@ const ReferralsSection = async () => {
                 </tr>
               </thead>
               <tbody>
-                {(data?.leaderboard || []).map(({ publicKey, usersReferred }: any, idx: number) => (
-                  <UserRow key={publicKey} idx={idx} publicKey={publicKey} usersReferred={usersReferred} />
-                ))}
+                {(data?.leaderboard || []).map(
+                  ({ publicKey, usersReferred }: any, idx: number) => (
+                    <UserRow
+                      key={publicKey}
+                      idx={idx}
+                      publicKey={publicKey}
+                      usersReferred={usersReferred}
+                    />
+                  )
+                )}
               </tbody>
             </table>
           </div>
-          <div>
-
-          </div>
+          <div></div>
         </Card>
       </section>
     </>
