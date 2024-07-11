@@ -1,7 +1,6 @@
 "use client";
 
-import axios from "axios";
-import { useEffect, useState } from "react";
+import Logo from "./Logo";
 
 export interface UserReferrals {
   publicKey: string;
@@ -10,28 +9,25 @@ export interface UserReferrals {
 }
 
 const UserRow = ({ publicKey, usersReferred, idx }: UserReferrals) => {
-  const [userData, setUserData] = useState({ profile_image: "", username: "" });
-
-  useEffect(() => {
-    const dataCall = async () => {
-      const { data } = await axios.get(`https://frontend-api.pump.fun/users/${publicKey}`);
-
-      setUserData(data);
-    }
-
-    dataCall()
-  }, [publicKey])
-
-
-  const ipfsId = userData.profile_image.split("/").pop()
-  const imgUrl = `https://pump.mypinata.cloud/ipfs/${ipfsId}?img-width=16&img-dpr=2&img-onerror=redirect`
-
-
-  return <tr key={publicKey} className="bg-base-200">
-    <th>{idx + 1}</th>
-    <td ><a className="flex gap-3 align-center" href={`https://pump.fun/profile/${publicKey}`}><img src={imgUrl} /> @{userData.username}</a></td>
-    <td>{usersReferred}</td>
-  </tr>
-}
+  return (
+    <tr key={publicKey} className="bg-base-200">
+      <th>{idx + 1}</th>
+      <td>
+        <a
+          className="flex gap-3 align-center"
+          href={`https://pump.fun/profile/${publicKey}`}
+        >
+          <img
+            className="w-5 h-5"
+            src="/images/logo-small.png"
+            alt="MicroPump Bot Logo"
+          />
+          {publicKey.substring(0, 4)}...{publicKey.substring(38, 42)}
+        </a>
+      </td>
+      <td>{usersReferred}</td>
+    </tr>
+  );
+};
 
 export default UserRow;
