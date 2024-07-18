@@ -26,13 +26,13 @@ const StatsSection = async () => {
     {
       title: "Service fees",
       icon: <AiFillDollarCircle size={40} />,
-      value: "0.00025 SOL",
-      description: "0.0005 SOL if you don't hold $MICRO",
+      value: "0.000125 SOL",
+      description: "0.00025 SOL if you don't hold $MICRO",
     },
     {
       title: "Or Use Token Pass",
       icon: <FaTicket size={40} />,
-      value: "0.2 SOL",
+      value: "0.1 SOL",
       description: `Paid once, no extra fees.Bought ${tokenPassesCount} times`,
     },
     {
