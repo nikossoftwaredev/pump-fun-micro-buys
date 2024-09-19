@@ -20,7 +20,7 @@ const StatsSection = async () => {
     {
       title: "Users",
       icon: <FaUser size={40} />,
-      value: totalUsers + 9,
+      value: totalUsers + 330,
       description: "Total number of users",
     },
     {
