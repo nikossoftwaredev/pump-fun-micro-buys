@@ -32,7 +32,7 @@ const StatsSection = async () => {
     {
       title: "Or Use Token Pass",
       icon: <FaTicket size={40} />,
-      value: "0.1 SOL",
+      value: "0.08 SOL",
       description: `Paid once, no extra fees.Bought ${tokenPassesCount} times`,
     },
     {
