@@ -8,7 +8,7 @@ export const Stat = ({
   color?: string;
 }) => {
   return (
-    <div className="stat bg-base-200">
+    <div className="stat glass-effect">
       <div className="stat-title">{title}</div>
       <div className="stat-value">{value}</div>
     </div>

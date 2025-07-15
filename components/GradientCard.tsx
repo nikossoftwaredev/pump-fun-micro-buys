@@ -36,11 +36,7 @@ before:translate-y-2
 relative
 "
   >
-    {title.includes("Pass") && (
-      <div className="badge  p-3 bg-error text-white absolute -top-3 -left-4">
-        New
-      </div>
-    )}
+   
     <div className="z-10 stat text-base-content">
       <div className="stat-figure text-accent ">{icon}</div>
       <div className="stat-title text-base-content">{title}</div>

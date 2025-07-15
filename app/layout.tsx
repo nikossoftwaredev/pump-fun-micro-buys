@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import BackgroundEffect from "@/components/BackgroundEffect";
 
 const APPLICATION_NAME = "Micro Pump Bot";
 const APPLICATION_DESCRIPTION =
@@ -35,9 +36,12 @@ export default function RootLayout({
       <head>
         <script data-preload src="https://terminal.jup.ag/main-v1.js"></script>
       </head>
-      <body className="text-base-content text-lg font-custom w-full flex justify-center">
-        <Header />
-        {children}
+      <body className="text-base-content text-lg font-custom w-full">
+        <BackgroundEffect />
+        <div className="relative z-10 w-full flex flex-col items-center">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
