@@ -3,6 +3,7 @@ import Card from "@/components/Card";
 import { SectionTitle } from "@/components/SectionTitle";
 import {
   BIRDEYE_URL,
+  BONK_URL,
   PUMP_URL,
   TELEGRAM_BOT_URL,
   TOKEN_ADDRESS,
@@ -90,8 +91,8 @@ const TokenSection = () => {
                 </span>
                 {TOKEN_ADDRESS}
               </button>
-              <a href={PUMP_URL} target="_blank" className="btn  btn-accent">
-                Buy <img src="/images/pump.webp" />
+              <a href={BONK_URL} target="_blank" className="btn  btn-accent">
+                Buy <img className="size-7" src="/images/lets-bonk.png" />
               </a>
               <a
                 href={BIRDEYE_URL}
